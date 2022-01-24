@@ -1,0 +1,39 @@
+.form-container{
+    display: grid;
+    place-items: center;
+    margin: 2rem auto;
+    background: #fff;
+    width: 50%;
+    border: 2px solid #ccc;
+}
+.form-header{
+    text-transform: capitalize;
+    text-align: center;
+}
+.form-control{
+    /* background: #ccc; */
+    /* border: 1px solid #ccc; */
+    padding: 0.8rem;
+    margin: 0.5rem auto;
+
+}
+label{
+
+    margin: 1rem auto;
+}
+input{
+    /* height: 15px; */
+    width: 100%;
+    margin: 1rem auto;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid #ff0000;
+}
+.btn{
+    background: #569cf8;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #569cf8;
+    border-radius: 4px;
+    margin: 1rem auto;
+}
