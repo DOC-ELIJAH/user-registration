@@ -10,7 +10,7 @@
       class="form-control"
       formControlName="fullname"
       />
-      <p
+      <p class="error-msg"
         *ngIf="
         this.contactForm.get('fullname')?.touched && !this.contactForm.get('fullname')?.valid">
       Please this is required

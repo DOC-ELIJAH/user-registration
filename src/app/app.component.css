@@ -29,6 +29,11 @@ input{
 input.ng-invalid.ng-touched{
     border: 1px solid #ff0000;
 }
+.error-msg {
+    background: #ff0000;
+    color: #fff;
+    border: 1px solid #ff0000;
+}
 .btn{
     background: #569cf8;
     color: #fff;
