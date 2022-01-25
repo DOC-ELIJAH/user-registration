@@ -21,7 +21,11 @@ export class AppComponent implements OnInit {
       password: new FormControl(null, [Validators.minLength(8), Validators.required]),
       
     });
-    console.log(this.contactForm.get('fullname')?.errors);
+    // console.log(this.contactForm.get('fullname')?.errors);
+    // const clearError = document.getElementsByClassName(' error-msg',) 
+    // setTimeout(()=> {
+    //   clearError.
+    // })
   }
 
   onSubmit() {
