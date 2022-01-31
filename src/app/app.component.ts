@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+// import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,31 +7,23 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  'contactForm': FormGroup;
+  // 'contactForm': FormGroup;
 
-  // isShown:boolean = false
-  //  showHide(){
-  //   this.isShown = ! this.isShown
-  // }
   ngOnInit() {
-    this.contactForm = new FormGroup({
-      fullname: new FormControl(null, Validators.required),
-      email: new FormControl(null, Validators.email),
-      phone: new FormControl(null, Validators.required),
-      password: new FormControl(null, [Validators.minLength(8), Validators.required]),
+    // this.contactForm = new FormGroup({
+    //   fullname: new FormControl(null, Validators.required),
+    //   email: new FormControl(null, Validators.email),
+    //   phone: new FormControl(null, Validators.required),
+    //   password: new FormControl(null, [Validators.minLength(8), Validators.required]),
       
-    });
-    // console.log(this.contactForm.get('fullname')?.errors);
-    // const clearError = document.getElementsByClassName(' error-msg',) 
-    // setTimeout(()=> {
-    //   clearError.
-    // })
+    // });
+
   }
 
-  onSubmit() {
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-    }
-    return this.contactForm.reset()
-  }
+  // onSubmit() {
+  //   if (this.contactForm.valid) {
+  //     console.log(this.contactForm.value);
+  //   }
+  //   return this.contactForm.reset()
+  // }
 }
